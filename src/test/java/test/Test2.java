@@ -1,4 +1,4 @@
-package com.example.tests;
+package test;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Test {
+public class Test2 {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -23,12 +23,12 @@ public class Test {
   }
 
   @Test
-  public void test() throws Exception {
-    driver.get("http://192.168.1.53/");
+  public void test2() throws Exception {
+    driver.get("http://18.232.56.152/");
     driver.findElement(By.linkText("Conoce mas")).click();
-    driver.findElement(By.xpath("(//a[contains(text(),'ENTRAR')])[3]")).click();
-    driver.findElement(By.xpath("//section[@id='info1-n']/div/div/div/h2")).click();
-    driver.findElement(By.name("tabla")).click();
+    driver.findElement(By.linkText("ENTRAR")).click();
+    driver.findElement(By.linkText("Volver")).click();
+    driver.findElement(By.xpath("//section[@id='info1-7']/div/div/div[2]/div/a/span")).click();
   }
 
   @After
