@@ -4,6 +4,6 @@ package com;
  *
  * @author TFM
  */
-public class App {
+public class Test2 {
     
 }
